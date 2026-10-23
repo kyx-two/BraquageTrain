@@ -4,6 +4,22 @@ class Program
 {
     static void Main(string[] args)
     {
+
+        Console.WriteLine("Inspection des 4 wagons du train");
+        int totcoffre = 0;
+
+        for (int wagon = 1; wagon <= 4; wagon ++)
+        {
+            for (int coffre = 1; coffre <= 3; coffre ++)
+
+            {
+                Console.WriteLine($"Wagon {wagon} - Coffre {coffre} inspecté");
+                totcoffre++;
+            }
+        }
+
+        Console.WriteLine($"Total : {totcoffre} coffres inspectés.");
+        
         /*
          * Consignes :
            - Utiliser une première boucle pour parcourir les quatre wagons.
